@@ -76,7 +76,7 @@ namespace finalproject.Controllers
             
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok("Update Success");
         }
 
         [HttpDelete("{id}", Name ="DeleteItemById")]
